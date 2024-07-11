@@ -1,0 +1,161 @@
+/* src/components/WeatherApp.css */
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Translucent white background */
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    /* Blur effect for glass-like appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center content horizontally */
+    margin-bottom: 20px;
+}
+
+.cityInput {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Slightly more opaque background */
+    backdrop-filter: blur(5px);
+    /* Blur effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    margin-right: 10px;
+    color: #333;
+    /* Dark text */
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+    /* Dark color */
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    /* Center image */
+    margin-bottom: 20px;
+}
+
+.images svg {
+    width: 100px;
+    /* Adjust icon size */
+    height: auto;
+}
+
+.temp {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Center text */
+    color: #333;
+    /* Dark color */
+}
+
+.location {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    /* Center text */
+    color: #333;
+    /* Dark color */
+}
+
+.coord {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: space-evenly;
+    /* Center text */
+    color: #555;
+    /* Slightly darker text */
+}
+
+.coordspan {
+    margin-left: 0.5svw;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.element {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 48px;
+    /* Adjusted icon size */
+    margin-right: 10px;
+    color: #555;
+    /* Slightly darker text */
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+}
+
+.humidity-percent,
+.wind-speed {
+    font-size: 18px;
+}
+
+.text {
+    font-size: 14px;
+    color: #888;
+    /* Lighter text color */
+}
+
+.loading-message,
+.error-message,
+.city-not-found {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    /* Center text */
+    color: #888;
+    /* Lighter text color */
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .temp {
+        font-size: 36px;
+    }
+
+    .location {
+        font-size: 20px;
+    }
+
+    .coord {
+        font-size: 12px;
+    }
+
+    .icon {
+        font-size: 36px;
+    }
+}
