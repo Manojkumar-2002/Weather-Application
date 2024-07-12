@@ -7,7 +7,7 @@ import { FaSearch } from 'react-icons/fa';
 
 function WeatherApp() {
   const api_key = import.meta.env.VITE_API_KEY;
-  const [text, setText] = useState("chennai");
+  const [text, setText] = useState("Chennai");
   const [icon, setIcon] = useState(<WiDaySunny />);
   const [temp, setTemp] = useState(0);
   const [city, setCity] = useState("");
